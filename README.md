@@ -59,6 +59,18 @@ disable:
 systemctl enable rke2-server.service
 systemctl start rke2-server.service
 ```
+#### Step 7: Add the below env variables in .bashrc file and source it.
+```
+export PATH=$PATH:/var/lib/rancher/rke2/bin 
+export KUBECONFIG=/etc/rancher/rke2/rke2.yaml
+
+source .bashrc
+```
+#### Step 8: You’ll need this token to add the other nodes to the cluster.
+```
+cat /var/lib/rancher/rke2/server/node-token
+```
+
 ================================================================================
 ## Steps for worker or agent nodes
 
