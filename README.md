@@ -118,3 +118,8 @@ systemctl enable rke2-agent.service
 systemctl start rke2-agent.service
 ```
 
+## Wait for few min.... That's it you have added successfully worker-node to your cluster to check run the below cmd:
+```
+kubectl get nodes
+```
+
